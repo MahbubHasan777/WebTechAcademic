@@ -32,10 +32,9 @@
             text-align: right;
             font-weight: bold;
         }
-
-        .purposeSecondOption {
-            display: inline-block;
-            padding-left: 324px;
+        .bar{
+            padding: .5rem 1.5rem;
+            background-color: white;
         }
     </style>
 </head>
@@ -157,19 +156,126 @@
                         <label class="textlabel">I would like to make this donation<span
                                 style="color: red;">*</span></label>
                         <input type="radio" name="purpose" /> To Honor <br />
-                        <span class="purposeSecondOption"> <input type="radio" name="purpose" /> In memory of </span>
+                        <span style="display: inline-block; padding-left: 324px;" class="purposeSecondOption"> <input
+                                type="radio" name="purpose" /> In memory of </span>
                     </div>
                 </div>
 
                 <div class="name textinput">
-                    <label class="textlabel" for="name">Name<span style="color: red;">*</span></label>
-                    <input type="text" id="name" class="textfield" />
+                    <label class="textlabel" for="acknowledgeeName">Acknowledge Name<span
+                            style="color: red;">*</span></label>
+                    <input type="text" id="acknowledgeeName" class="textfield" />
                 </div>
 
-                <div class="name textinput">
-                    <label class="textlabel" for="name">Name<span style="color: red;">*</span></label>
-                    <input type="text" id="name" class="textfield" />
+                <div class="address textinput">
+                    <label class="textlabel" for="acknowledgeAddress">Address</label>
+                    <input type="text" id="acknowledgeAddress" class="textfield" />
                 </div>
+
+                <div class="city textinput">
+                    <label class="textlabel" for="acknowledgeCity">City</label>
+                    <input type="text" id="acknowledgeCity" class="textfield" />
+                </div>
+
+                <div class="state textinput">
+                    <label class="textlabel" for="acknowledgeState">State</label>
+                    <select id="acknowledgeState">
+                        <option>Select a State</option>
+                        <option>Bogura</option>
+                        <option>Dhaka</option>
+                        <option>Rajshahi</option>
+                    </select>
+                </div>
+
+                <div class="zipcode textinput">
+                    <label class="textlabel" for="acknowledgeZip">Zip Code</label>
+                    <input type="text" id="acknowledgeZip" class="textfield" />
+                </div>
+
+                <div class="Donor-Info">Additional Information</div>
+                <br />
+                <div class="textinput">
+                    <div style="font-weight: 400;">
+                        Please enter your name, company or organization as you would like it to appear in our
+                        publications:
+                    </div>
+                </div>
+
+                <div class="publicationName textinput">
+                    <label class="textlabel" for="publicationName">Name</label>
+                    <input type="text" id="publicationName" class="textfield" />
+                </div>
+
+                <div class="">
+                    <div class=""></div>
+                    <input type="checkbox" /> I would like my gift to remain anonymous.
+                </div>
+
+                <div class="">
+                    <div class=""></div>
+                    <input type="checkbox" /> My employer offers a matching gift program. I will mail the matching gift
+                    form.
+                </div>
+
+                <div class="">
+                    <div class=""></div>
+                    <input type="checkbox" /> Please save the cost of acknowledging this gift by not mailing a thank you
+                    letter.
+                </div>
+
+                <div class="comments textinput">
+                    <label class="textlabel" for="comments" style="vertical-align: top;">Comments<br />(Please type any
+                        questions or feedback here)</label>
+                    <textarea id="comments" rows="4" cols="50"></textarea>
+                </div>
+
+                <div class="contactMethod textinput">
+                    <label class="textlabel" style="vertical-align: top;">How may we contact you?</label>
+                    <div style="display: inline-block; vertical-align: top;">
+                        <input type="checkbox" /> E-mail<br />
+                        <input type="checkbox" /> Postal Mail<br />
+                        <input type="checkbox" /> Telephone<br />
+                        <input type="checkbox" /> Fax
+                    </div>
+                </div>
+
+                <div class="newsletter textinput">
+                    <div class="" style="font-weight: 400; color: gray;">
+                        I would like to receive newsletters and information about special events by:
+                    </div>
+                    <span style="display: inline-block; padding-left: 324px;">
+                        <input type="checkbox" /> Email
+                    </span><br />
+                    <span style="display: inline-block; padding-left: 324px;">
+                        <input type="checkbox" /> Postal Mail
+                    </span>
+                </div>
+
+                <div class="volunteer textinput">
+                    <div class=""></div>
+                    <input type="checkbox" /> I would like information about volunteering with the
+                </div>
+                <br />
+                <div class="bar"></div>
+                <br />
+                <div class="textinput">
+                    <div class="textlabel"></div>
+                    <input type="reset" value="Reset" />
+                    <input type="submit" value="Continue" />
+                </div>
+
+                <br />
+                <div class="textinput">
+                    <div class=""></div>
+                    🔒Donate online with confidence. You are on a secure server.
+                </div>
+
+                <div class="">
+                    <div class="" style="font-weight: 400;">
+                        If you have any problems or questions, please contact <span style="color: gray;">support.</span>
+                    </div>
+                </div>
+            </div>
         </form>
     </div>
 </body>
