@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 3 Task</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            padding: 0.5rem 1rem;
+            background-color: lightgray;
+            min-height: 100vh;
+        }
+
+        .Donor-Info {
+            color: red;
+            font-weight: bold;
+            font-size: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .textlabel {
+            display: inline-block;
+            width: 320px;
+            text-align: right;
+            font-weight: bold;
+        }
+
+        .purposeSecondOption {
+            display: inline-block;
+            padding-left: 324px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <span style="color: red;">*</span> - Denotes Required Information
+        <br />
+        <div><strong> > 1 Donation</strong> > &nbsp;&nbsp;&nbsp;Confirmation > &nbsp;&nbsp;&nbsp;Thank You!</div>
+
+        <form>
+            <div class="Donor-Info">Donor Information</div>
+            <br />
+            <div class="Donor-Info-Container">
+                <div class="firstname textinput">
+                    <label class="textlabel" for="firstname">First Name<span style="color: red;">*</span></label>
+                    <input type="text" id="firstname" class="textfield" required />
+                </div>
+
+                <div class="lastname textinput">
+                    <label class="textlabel" for="lastname">Last Name<span style="color: red;">*</span></label>
+                    <input type="text" id="lastname" class="textfield" required />
+                </div>
+                <div class="company textinput">
+                    <label class="textlabel" for="company">Company</label>
+                    <input type="text" id="company" class="textfield" />
+                </div>
+
+                <div class="address1 textinput">
+                    <label class="textlabel" for="address1">Address 1<span style="color: red;">*</span></label>
+                    <input type="text" id="address1" class="textfield" required />
+                </div>
+
+                <div class="address2 textinput">
+                    <label class="textlabel" for="address2">Address 2</label>
+                    <input type="text" id="address2" class="textfield" />
+                </div>
+
+                <div class="city textinput">
+                    <label class="textlabel" for="city">City<span style="color: red;">*</span></label>
+                    <input type="text" id="city" class="textfield" required />
+                </div>
+
+
+                <div class="state textinput">
+                    <label class="textlabel" for="state">State<span style="color: red;">*</span></label>
+                    <select required>
+                        <option>Select a State</option>
+                        <option>Bogura</option>
+                        <option>Dhaka</option>
+                        <option>Rajshahi</option>
+                    </select>
+                </div>
+
+
+                <div class="zipcode textinput">
+                    <label class="textlabel" for="zipcode">Zip Code<span style="color: red;">*</span></label>
+                    <input type="text" id="zipcode" class="textfield" required />
+                </div>
+
+                <div class="country textinput">
+                    <label class="textlabel" for="country">Country<span style="color: red;">*</span></label>
+                    <select>
+                        <option>Select a Country</option>
+                        <option>Bangladesh</option>
+                        <option>Afghanistan</option>
+                        <option>Iran</option>
+                    </select>
+                </div>
+
+                <div class="phone textinput">
+                    <label class="textlabel" for="phone">Phone</label>
+                    <input type="text" id="phone" class="textfield" />
+                </div>
+
+                <div class="fax textinput">
+                    <label class="textlabel" for="fax">Fax<span style="color: red;">*</span></label>
+                    <input type="text" id="fax" class="textfield" />
+                </div>
+
+                <div class="email textinput">
+                    <label class="textlabel" for="email">Email<span style="color: red;">*</span></label>
+                    <input type="text" id="email" class="textfield" />
+                </div>
+
+                <div class="donationAmount textinput">
+                    <label class="textlabel">Donation Amount<span style="color: red;">*</span></label>
+                    <input type="radio" value="None" name="donationAmount" class="textfield" checked />None
+                    <input type="radio" value="$50" name="donationAmount" class="textfield" />$50
+                    <input type="radio" value="$75" name="donationAmount" class="textfield" />$75
+                    <input type="radio" value="$100" name="donationAmount" class="textfield" />$100
+                    <input type="radio" value="Other" name="donationAmount" class="textfield" />Other
+                </div>
+
+                <div class="otherAmount textinput">
+                    <label class="textlabel" for="otherAmount">Other amount $</label>
+                    <input type="text" id="otherAmount" class="textfield" />
+                </div>
+
+                <div class="recurringDonation textinput">
+                    <label class="textlabel" for="recurringDonation">Recurring Donation</label>
+                    <input type="checkbox" id="recurringDonation" class="textfield" /> I am interested in giving on a
+                    regular basis.
+                </div>
+
+                <div class="recurringDonation textinput">
+                    <div class="textlabel" style="font-weight: 400;">
+                        Monthly Credit Card $
+                    </div>
+                    <input style="width: 60px;" type="number" />
+                    For <input style="width: 60px;" type="number" />
+                    Months.
+                </div>
+
+                <div class="Donor-Info">Honorarium and Memorial Donation Information</div>
+                <br />
+                <div class="Second-Container">
+                    <div class="purpose textinput">
+                        <label class="textlabel">I would like to make this donation<span
+                                style="color: red;">*</span></label>
+                        <input type="radio" name="purpose" /> To Honor <br />
+                        <span class="purposeSecondOption"> <input type="radio" name="purpose" /> In memory of </span>
+                    </div>
+                </div>
+
+                <div class="name textinput">
+                    <label class="textlabel" for="name">Name<span style="color: red;">*</span></label>
+                    <input type="text" id="name" class="textfield" />
+                </div>
+
+                <div class="name textinput">
+                    <label class="textlabel" for="name">Name<span style="color: red;">*</span></label>
+                    <input type="text" id="name" class="textfield" />
+                </div>
+        </form>
+    </div>
+</body>
+
+</html>
