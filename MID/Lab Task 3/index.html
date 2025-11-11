@@ -5,38 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Class 3 Task</title>
-    <style>
-        * {
-            box-sizing: border-box;
-            font-family: sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-
-        .container {
-            padding: 0.5rem 1rem;
-            background-color: lightgray;
-            min-height: 100vh;
-        }
-
-        .Donor-Info {
-            color: red;
-            font-weight: bold;
-            font-size: 1.5rem;
-            margin-top: 1rem;
-        }
-
-        .textlabel {
-            display: inline-block;
-            width: 320px;
-            text-align: right;
-            font-weight: bold;
-        }
-        .bar{
-            padding: .5rem 1.5rem;
-            background-color: white;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
@@ -45,43 +14,43 @@
         <br />
         <div><strong> > 1 Donation</strong> > &nbsp;&nbsp;&nbsp;Confirmation > &nbsp;&nbsp;&nbsp;Thank You!</div>
 
-        <form>
+        <form id="donationForm">
             <div class="Donor-Info">Donor Information</div>
             <br />
             <div class="Donor-Info-Container">
                 <div class="firstname textinput">
                     <label class="textlabel" for="firstname">First Name<span style="color: red;">*</span></label>
-                    <input type="text" id="firstname" class="textfield" required />
+                    <input type="text" id="firstname" name="firstname" class="textfield" />
                 </div>
 
                 <div class="lastname textinput">
                     <label class="textlabel" for="lastname">Last Name<span style="color: red;">*</span></label>
-                    <input type="text" id="lastname" class="textfield" required />
+                    <input type="text" id="lastname" name="lastname" class="textfield" />
                 </div>
                 <div class="company textinput">
                     <label class="textlabel" for="company">Company</label>
-                    <input type="text" id="company" class="textfield" />
+                    <input type="text" id="company" name="company" class="textfield" />
                 </div>
 
                 <div class="address1 textinput">
                     <label class="textlabel" for="address1">Address 1<span style="color: red;">*</span></label>
-                    <input type="text" id="address1" class="textfield" required />
+                    <input type="text" id="address1" name="address1" class="textfield" />
                 </div>
 
                 <div class="address2 textinput">
                     <label class="textlabel" for="address2">Address 2</label>
-                    <input type="text" id="address2" class="textfield" />
+                    <input type="text" id="address2" name="address2" class="textfield" />
                 </div>
 
                 <div class="city textinput">
                     <label class="textlabel" for="city">City<span style="color: red;">*</span></label>
-                    <input type="text" id="city" class="textfield" required />
+                    <input type="text" id="city" name="city" class="textfield" />
                 </div>
 
 
                 <div class="state textinput">
                     <label class="textlabel" for="state">State<span style="color: red;">*</span></label>
-                    <select required>
+                    <select id="state" name="state">
                         <option>Select a State</option>
                         <option>Bogura</option>
                         <option>Dhaka</option>
@@ -92,12 +61,12 @@
 
                 <div class="zipcode textinput">
                     <label class="textlabel" for="zipcode">Zip Code<span style="color: red;">*</span></label>
-                    <input type="text" id="zipcode" class="textfield" required />
+                    <input type="text" id="zipcode" name="zipcode" class="textfield" />
                 </div>
 
                 <div class="country textinput">
                     <label class="textlabel" for="country">Country<span style="color: red;">*</span></label>
-                    <select>
+                    <select id="country" name="country">
                         <option>Select a Country</option>
                         <option>Bangladesh</option>
                         <option>Afghanistan</option>
@@ -107,45 +76,45 @@
 
                 <div class="phone textinput">
                     <label class="textlabel" for="phone">Phone</label>
-                    <input type="text" id="phone" class="textfield" />
+                    <input type="text" id="phone" name="phone" class="textfield" />
                 </div>
 
                 <div class="fax textinput">
-                    <label class="textlabel" for="fax">Fax<span style="color: red;">*</span></label>
-                    <input type="text" id="fax" class="textfield" />
+                    <label class="textlabel" for="fax">Fax</label>
+                    <input type="text" id="fax" name="fax" class="textfield" />
                 </div>
 
                 <div class="email textinput">
                     <label class="textlabel" for="email">Email<span style="color: red;">*</span></label>
-                    <input type="text" id="email" class="textfield" />
+                    <input type="email" id="email" name="email" class="textfield" />
                 </div>
 
                 <div class="donationAmount textinput">
                     <label class="textlabel">Donation Amount<span style="color: red;">*</span></label>
-                    <input type="radio" value="None" name="donationAmount" class="textfield" checked />None
-                    <input type="radio" value="$50" name="donationAmount" class="textfield" />$50
-                    <input type="radio" value="$75" name="donationAmount" class="textfield" />$75
-                    <input type="radio" value="$100" name="donationAmount" class="textfield" />$100
-                    <input type="radio" value="Other" name="donationAmount" class="textfield" />Other
+                    <input type="radio" value="None" name="donationAmount" id="donationNone" class="textfield" checked />None
+                    <input type="radio" value="$50" name="donationAmount" id="donation50" class="textfield" />$50
+                    <input type="radio" value="$75" name="donationAmount" id="donation75" class="textfield" />$75
+                    <input type="radio" value="$100" name="donationAmount" id="donation100" class="textfield" />$100
+                    <input type="radio" value="Other" name="donationAmount" id="donationOther" class="textfield" />Other
                 </div>
 
-                <div class="otherAmount textinput">
+                <div class="otherAmount textinput" id="otherAmountContainer">
                     <label class="textlabel" for="otherAmount">Other amount $</label>
-                    <input type="text" id="otherAmount" class="textfield" />
+                    <input type="number" id="otherAmount" name="otherAmount" class="textfield" min="1" step="0.01" />
                 </div>
 
                 <div class="recurringDonation textinput">
                     <label class="textlabel" for="recurringDonation">Recurring Donation</label>
-                    <input type="checkbox" id="recurringDonation" class="textfield" /> I am interested in giving on a
+                    <input type="checkbox" id="recurringDonation" name="recurringDonation" class="textfield" /> I am interested in giving on a
                     regular basis.
                 </div>
 
-                <div class="recurringDonation textinput">
+                <div class="recurringDonation textinput" id="recurringAmountContainer">
                     <div class="textlabel" style="font-weight: 400;">
                         Monthly Credit Card $
                     </div>
-                    <input style="width: 60px;" type="number" />
-                    For <input style="width: 60px;" type="number" />
+                    <input style="width: 60px;" type="number" id="monthlyAmount" name="monthlyAmount" min="1" step="0.01" />
+                    For <input style="width: 60px;" type="number" id="months" name="months" min="1" max="120" />
                     Months.
                 </div>
 
@@ -153,33 +122,31 @@
                 <br />
                 <div class="Second-Container">
                     <div class="purpose textinput">
-                        <label class="textlabel">I would like to make this donation<span
-                                style="color: red;">*</span></label>
-                        <input type="radio" name="purpose" /> To Honor <br />
+                        <label class="textlabel">I would like to make this donation</label>
+                        <input type="radio" name="purpose" id="toHonor" value="honor" /> To Honor <br />
                         <span style="display: inline-block; padding-left: 324px;" class="purposeSecondOption"> <input
-                                type="radio" name="purpose" /> In memory of </span>
+                                type="radio" name="purpose" id="inMemory" value="memory" /> In memory of </span>
                     </div>
                 </div>
 
                 <div class="name textinput">
-                    <label class="textlabel" for="acknowledgeeName">Acknowledge Name<span
-                            style="color: red;">*</span></label>
-                    <input type="text" id="acknowledgeeName" class="textfield" />
+                    <label class="textlabel" for="acknowledgeeName">Acknowledge Name</label>
+                    <input type="text" id="acknowledgeeName" name="acknowledgeeName" class="textfield" />
                 </div>
 
                 <div class="address textinput">
                     <label class="textlabel" for="acknowledgeAddress">Address</label>
-                    <input type="text" id="acknowledgeAddress" class="textfield" />
+                    <input type="text" id="acknowledgeAddress" name="acknowledgeAddress" class="textfield" />
                 </div>
 
                 <div class="city textinput">
                     <label class="textlabel" for="acknowledgeCity">City</label>
-                    <input type="text" id="acknowledgeCity" class="textfield" />
+                    <input type="text" id="acknowledgeCity" name="acknowledgeCity" class="textfield" />
                 </div>
 
                 <div class="state textinput">
                     <label class="textlabel" for="acknowledgeState">State</label>
-                    <select id="acknowledgeState">
+                    <select id="acknowledgeState" name="acknowledgeState">
                         <option>Select a State</option>
                         <option>Bogura</option>
                         <option>Dhaka</option>
@@ -189,7 +156,7 @@
 
                 <div class="zipcode textinput">
                     <label class="textlabel" for="acknowledgeZip">Zip Code</label>
-                    <input type="text" id="acknowledgeZip" class="textfield" />
+                    <input type="text" id="acknowledgeZip" name="acknowledgeZip" class="textfield" />
                 </div>
 
                 <div class="Donor-Info">Additional Information</div>
@@ -203,39 +170,39 @@
 
                 <div class="publicationName textinput">
                     <label class="textlabel" for="publicationName">Name</label>
-                    <input type="text" id="publicationName" class="textfield" />
+                    <input type="text" id="publicationName" name="publicationName" class="textfield" />
                 </div>
 
                 <div class="">
                     <div class=""></div>
-                    <input type="checkbox" /> I would like my gift to remain anonymous.
+                    <input type="checkbox" id="anonymous" name="anonymous" /> I would like my gift to remain anonymous.
                 </div>
 
                 <div class="">
                     <div class=""></div>
-                    <input type="checkbox" /> My employer offers a matching gift program. I will mail the matching gift
+                    <input type="checkbox" id="matchingGift" name="matchingGift" /> My employer offers a matching gift program. I will mail the matching gift
                     form.
                 </div>
 
                 <div class="">
                     <div class=""></div>
-                    <input type="checkbox" /> Please save the cost of acknowledging this gift by not mailing a thank you
+                    <input type="checkbox" id="noThankYou" name="noThankYou" /> Please save the cost of acknowledging this gift by not mailing a thank you
                     letter.
                 </div>
 
                 <div class="comments textinput">
                     <label class="textlabel" for="comments" style="vertical-align: top;">Comments<br />(Please type any
                         questions or feedback here)</label>
-                    <textarea id="comments" rows="4" cols="50"></textarea>
+                    <textarea id="comments" name="comments" rows="4" cols="50" maxlength="200"></textarea>
                 </div>
 
                 <div class="contactMethod textinput">
                     <label class="textlabel" style="vertical-align: top;">How may we contact you?</label>
                     <div style="display: inline-block; vertical-align: top;">
-                        <input type="checkbox" /> E-mail<br />
-                        <input type="checkbox" /> Postal Mail<br />
-                        <input type="checkbox" /> Telephone<br />
-                        <input type="checkbox" /> Fax
+                        <input type="checkbox" id="contactEmail" name="contactEmail" /> E-mail<br />
+                        <input type="checkbox" id="contactPostal" name="contactPostal" /> Postal Mail<br />
+                        <input type="checkbox" id="contactPhone" name="contactPhone" /> Telephone<br />
+                        <input type="checkbox" id="contactFax" name="contactFax" /> Fax
                     </div>
                 </div>
 
@@ -244,16 +211,16 @@
                         I would like to receive newsletters and information about special events by:
                     </div>
                     <span style="display: inline-block; padding-left: 324px;">
-                        <input type="checkbox" /> Email
+                        <input type="checkbox" id="newsletterEmail" name="newsletterEmail" /> Email
                     </span><br />
                     <span style="display: inline-block; padding-left: 324px;">
-                        <input type="checkbox" /> Postal Mail
+                        <input type="checkbox" id="newsletterPostal" name="newsletterPostal" /> Postal Mail
                     </span>
                 </div>
 
                 <div class="volunteer textinput">
                     <div class=""></div>
-                    <input type="checkbox" /> I would like information about volunteering with the
+                    <input type="checkbox" id="volunteer" name="volunteer" /> I would like information about volunteering with the
                 </div>
                 <br />
                 <div class="bar"></div>
@@ -278,6 +245,8 @@
             </div>
         </form>
     </div>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
