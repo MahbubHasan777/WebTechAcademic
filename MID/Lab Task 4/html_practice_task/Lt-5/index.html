@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mahbub Hasan">
+    <meta name="description" content="DailyFlash - Breaking news and trending stories from around the world.">
+    <title>DailyFlash | Home</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        header {
+            background-color: #d32f2f;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        header p {
+            margin: 5px 0 0;
+            font-style: italic;
+        }
+
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline-block;
+        }
+
+        nav ul li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            background-color: #555;
+        }
+
+        nav ul li a.active {
+            background-color: #b71c1c;
+            font-weight: bold;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        main {
+            flex: 3;
+            background-color: white;
+            padding: 20px;
+            margin-right: 20px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        aside {
+            flex: 1;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            height: fit-content;
+        }
+
+        article {
+            margin-bottom: 30px;
+        }
+
+        article h2 {
+            color: #d32f2f;
+        }
+
+        article img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+
+        .sidebar-section {
+            margin-bottom: 30px;
+        }
+
+        .sidebar-section h3 {
+            border-bottom: 2px solid #d32f2f;
+            padding-bottom: 5px;
+            color: #333;
+        }
+
+        .sidebar-section ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .sidebar-section ul li {
+            margin-bottom: 10px;
+        }
+
+        .sidebar-section ul li a {
+            text-decoration: none;
+            color: #555;
+        }
+
+        .sidebar-section ul li a:hover {
+            color: #d32f2f;
+        }
+
+        .ad-box {
+            background-color: #eee;
+            padding: 20px;
+            text-align: center;
+            border: 1px dashed #999;
+            margin-top: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        footer a {
+            color: #ddd;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            main {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>DailyFlash</h1>
+        <p>Your Source for Instant News</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="world.html">World</a></li>
+            <li><a href="sports.html">Sports</a></li>
+            <li><a href="#">Tech</a></li>
+            <li><a href="#">Lifestyle</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <main>
+            <article>
+                <h2>World Leaders Meet for Climate Summit</h2>
+                <small>Published on: October 25, 2025</small>
+                <img src="https://placehold.co/800x400" alt="Climate Summit">
+                <p>Global leaders have gathered in Geneva to discuss urgent measures to combat climate change. The
+                    summit aims to set new targets for carbon emission reductions by 2030. Activists from around the
+                    world are watching closely as negotiations begin.</p>
+                <a href="#">Read More</a>
+            </article>
+            <hr>
+            <article>
+                <h2>National Team Wins Championship</h2>
+                <small>Published on: October 24, 2025</small>
+                <img src="https://placehold.co/800x400" alt="Championship Win">
+                <p>In a thrilling final match, the national team secured a historic victory against their rivals. The
+                    winning goal was scored in the final minutes of extra time, sending fans into a frenzy of
+                    celebration across the country.</p>
+                <a href="#">Read More</a>
+            </article>
+            <hr>
+            <article>
+                <h2>New Smartphone Sets Record Sales</h2>
+                <small>Published on: October 23, 2025</small>
+                <img src="https://placehold.co/800x400" alt="Smartphone Launch">
+                <p>The latest flagship smartphone from TechGiant has broken all previous sales records within just 24
+                    hours of its release. Consumers lined up outside stores overnight to get their hands on the new
+                    device, which features revolutionary AI capabilities.</p>
+                <a href="#">Read More</a>
+            </article>
+        </main>
+
+        <aside>
+            <div class="sidebar-section">
+                <h3>Top Headlines</h3>
+                <ul>
+                    <li><a href="#">Stock Markets Reach All-Time High</a></li>
+                    <li><a href="#">New Space Mission Announced</a></li>
+                    <li><a href="#">Health Experts Warn of Flu Season</a></li>
+                    <li><a href="#">Local Hero Saves Cat from Tree</a></li>
+                    <li><a href="#">Traffic Updates for the Weekend</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-section">
+                <h3>Trending</h3>
+                <ul>
+                    <li><a href="#"><strong>#TechRevolution</strong></a></li>
+                    <li><a href="#"><strong>#Championship</strong></a></li>
+                </ul>
+            </div>
+
+            <div class="ad-box">
+                <h4>Advertisement</h4>
+                <p>Buy 1 Get 1 Free on all Electronics!</p>
+            </div>
+        </aside>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 DailyFlash. All Rights Reserved.</p>
+        <p>
+            <a href="#">Facebook</a> |
+            <a href="#">X (Twitter)</a> |
+            <a href="#">Instagram</a> |
+            <a href="#">LinkedIn</a>
+        </p>
+        <p><a href="#top">Back to Top</a></p>
+    </footer>
+
+</body>
+
+</html>

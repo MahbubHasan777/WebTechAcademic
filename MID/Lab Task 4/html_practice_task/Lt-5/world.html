@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mahbub Hasan">
+    <meta name="description" content="DailyFlash - World News.">
+    <title>DailyFlash | World</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        header {
+            background-color: #d32f2f;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        header p {
+            margin: 5px 0 0;
+            font-style: italic;
+        }
+
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline-block;
+        }
+
+        nav ul li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            background-color: #555;
+        }
+
+        nav ul li a.active {
+            background-color: #b71c1c;
+            font-weight: bold;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        main {
+            flex: 3;
+            background-color: white;
+            padding: 20px;
+            margin-right: 20px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        aside {
+            flex: 1;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            height: fit-content;
+        }
+
+        article {
+            margin-bottom: 30px;
+        }
+
+        article h2 {
+            color: #d32f2f;
+        }
+
+        article img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+
+        .sidebar-section {
+            margin-bottom: 30px;
+        }
+
+        .sidebar-section h3 {
+            border-bottom: 2px solid #d32f2f;
+            padding-bottom: 5px;
+            color: #333;
+        }
+
+        .sidebar-section ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .sidebar-section ul li {
+            margin-bottom: 10px;
+        }
+
+        .sidebar-section ul li a {
+            text-decoration: none;
+            color: #555;
+        }
+
+        .sidebar-section ul li a:hover {
+            color: #d32f2f;
+        }
+
+        .ad-box {
+            background-color: #eee;
+            padding: 20px;
+            text-align: center;
+            border: 1px dashed #999;
+            margin-top: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        footer a {
+            color: #ddd;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            main {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>DailyFlash</h1>
+        <p>Your Source for Instant News</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="world.html" class="active">World</a></li>
+            <li><a href="sports.html">Sports</a></li>
+            <li><a href="#">Tech</a></li>
+            <li><a href="#">Lifestyle</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <main>
+            <article>
+                <h2>UN Announces New Peacekeeping Mission</h2>
+                <small>Published on: October 26, 2025</small>
+                <img src="https://via.placeholder.com/800x400?text=UN+Mission" alt="UN Mission">
+                <p>The United Nations Security Council has unanimously voted to deploy a new peacekeeping force to the
+                    troubled region. This decision comes after months of diplomatic negotiations and aims to restore
+                    stability and protect civilians.</p>
+                <a href="#">Read More</a>
+            </article>
+            <hr>
+            <article>
+                <h2>Global Economy Shows Signs of Recovery</h2>
+                <small>Published on: October 25, 2025</small>
+                <img src="https://via.placeholder.com/800x400?text=Global+Economy" alt="Global Economy">
+                <p>Economists are optimistic as recent data indicates a strong rebound in global markets. Trade volumes
+                    have increased, and unemployment rates are dropping in major economies, signaling a positive outlook
+                    for the coming year.</p>
+                <a href="#">Read More</a>
+            </article>
+            <hr>
+            <article>
+                <h2>Major Breakthrough in Renewable Energy</h2>
+                <small>Published on: October 24, 2025</small>
+                <img src="https://via.placeholder.com/800x400?text=Renewable+Energy" alt="Renewable Energy">
+                <p>Scientists have developed a new type of solar panel that is 50% more efficient than current models.
+                    This breakthrough could revolutionize the energy sector and make clean energy more accessible
+                    worldwide.</p>
+                <a href="#">Read More</a>
+            </article>
+        </main>
+
+        <aside>
+            <div class="sidebar-section">
+                <h3>Top Headlines</h3>
+                <ul>
+                    <li><a href="#">Stock Markets Reach All-Time High</a></li>
+                    <li><a href="#">New Space Mission Announced</a></li>
+                    <li><a href="#">Health Experts Warn of Flu Season</a></li>
+                    <li><a href="#">Local Hero Saves Cat from Tree</a></li>
+                    <li><a href="#">Traffic Updates for the Weekend</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-section">
+                <h3>Trending</h3>
+                <ul>
+                    <li><a href="#"><strong>#TechRevolution</strong></a></li>
+                    <li><a href="#"><strong>#Championship</strong></a></li>
+                </ul>
+            </div>
+
+            <div class="ad-box">
+                <h4>Advertisement</h4>
+                <p>Buy 1 Get 1 Free on all Electronics!</p>
+            </div>
+        </aside>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 DailyFlash. All Rights Reserved.</p>
+        <p>
+            <a href="#">Facebook</a> |
+            <a href="#">X (Twitter)</a> |
+            <a href="#">Instagram</a> |
+            <a href="#">LinkedIn</a>
+        </p>
+        <p><a href="#top">Back to Top</a></p>
+    </footer>
+
+</body>
+
+</html>
